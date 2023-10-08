@@ -1,0 +1,119 @@
+/* this is my CSS page */
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: white;
+    color: black;
+    margin: 0;
+}
+
+/* this is the header section */
+header {
+    background-color: #4b4a1e;
+    color: white;
+    padding: 1rem 2vw;
+}
+
+header h1{
+    margin: 0;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+}
+
+header p{
+    margin: 0;
+    color: white;
+    letter-spacing: .5px;
+}
+
+/* navigation */
+nav {
+    background-color: #d9663d;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+}
+
+nav a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    font-weight:700;
+    display: block;
+    padding: .83rem 2rem;
+}
+
+nav li.active a{
+    background-color: #e7ba90;
+    color: white;
+}
+
+nav a:hover{
+    color: #4b4a1e;
+}
+
+/* this is the main section*/
+main{
+    padding: .5rem 1vw;
+}
+
+main h1{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+main ol{
+    list-style-type: circle;
+    background-color: #e7ba90;
+    padding: .5rem 3vw;
+}
+
+main dl{
+    border-style:double;
+    border-color: #e7ba90;
+    padding: .5rem 1vw;
+}
+
+main dl dt{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    color: #a6351c;
+}
+
+main dl dd{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    color: #4b4a1e;
+}
+
+main ul li{
+    list-style-type: square;
+}
+
+main p a{
+    color: #4b4a1e;
+}
+
+main address a{
+    color: #4b4a1e;
+}
+
+/* this is the footer section*/
+footer{
+    background-color: #4b4a1e;
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+
+footer a{
+    color: white;
+}

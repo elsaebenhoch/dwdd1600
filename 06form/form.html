@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<html>
+    <head>
+        <title>National Parks of Utah: Home</title>
+        <link rel="stylesheet" href="website.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="Learn about the National Parks of Utah">
+        <meta name="author" content="Elsa Ebenhoch">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Fjalla+One&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--start of the page header-->
+        <header>
+            <h1>NATIONAL PARKS OF UTAH</h1>
+            <p>Learn about all of Utah's National Parks.</p>
+        </header>
+        <!--start of the page navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Arches National Park</a></li>
+                <li><a href="bryce.html">Bryce Canyon National Park</a></li>
+                <li><a href="canyon.html">Canyonlands National Park</a></li>
+                <li><a href="capitol.html">Capitol Reef National Park</a></li>
+                <li><a href="zion.html">Zion National Park</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href ="form.html">Join Newsletter</a></li>
+            </ul>
+        </nav>
+        <!--start of the page content-->
+        <main>
+            <h1>Join the National Park Service Newsletter</h1>
+
+            <form method="get" class="myform" action="thanks.html">
+
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label>First Name: <input type="text" name="fname" required></label><br>
+                    <label>Last Name: <input type="text" name="lname" required></label><br>
+                    <label>Email: <input type="email" name="email" required></label><br>
+                    <label>Phone Number: <input type="tel" name="number" required></label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Newsletter Preference</legend>
+                    <label><input type="radio" name="preference" value="email">Through Email </label><br>
+                    <label><input type="radio" name="preference" value="text">Through Text </label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>What Would You Like to Hear About?</legend>
+                    <label><input type="checkbox" name="updates" value="updates"> Latest news/updates</label><br>
+                    <label><input type="checkbox" name="tips" value="tips"> Travel tips</label><br>
+                    <label><input type="checkbox" name="information" value="information"> Park information</label><br>
+                    <label><input type="checkbox" name="promotions" value="promotions"> Promotions</label><br>
+
+                    <label>
+                        <select name="frequency">
+                            <option value="none">How Often Would You Like to Hear From Us?</option>
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="yearly">Yearly</option>
+                        </select>
+                        </label>
+                </fieldset>
+
+                <label>Comments
+                    <textarea name="comments"></textarea>
+                </label><br>
+
+                <input type="submit" value="Join Newsletter">
+            </form>
+
+        </main>
+
+
+    </body>
+
+        <footer>
+            <p>&copy; 2023 &bull; Elsa Ebenhoch &bull; <a href="mailto:ebelsa7@gmail.com">Email Us</a></p>
+        </footer>

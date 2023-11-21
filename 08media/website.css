@@ -1,0 +1,287 @@
+/* this is my CSS page */
+
+/* prevent problems with different browsers*/
+* {box-sizing: border-box;}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background-color: white;
+    color: black;
+    margin: 0;
+}
+
+/* this is the header section */
+header {
+    background-color: #4b4a1e;
+    color: white;
+    padding: 1rem 2vw;
+    display: flex;
+    align-items: center;
+}
+
+header div {
+    padding-left: 1vw;
+}
+
+header h1{
+    margin: 0;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: 400;
+}
+
+header p{
+    margin: 0;
+    color: white;
+    letter-spacing: .5px;
+}
+
+/* navigation */
+
+/* small screens */
+@media only screen and (max-width: 940px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+
+    nav a {
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        border-bottom: solid 1px #4b4a1e;
+        color: #d9663d;
+    }
+
+    nav .active a {
+        background-color: #d9663d;
+        background-image: linear-gradient(to bottom, #e7ba90, #d9663d);
+        color: white;
+    }
+} /* end of media query*/
+
+/* big screens */
+@media only screen and (min-width: 940px) {
+nav {
+    background-color: #d9663d;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+nav a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+    font-weight:700;
+    display: block;
+    padding: .83rem 2rem;
+}
+
+nav li.active a{
+    background-color: #e7ba90;
+    color: white;
+}
+
+nav a:hover{
+    color: #4b4a1e;
+}
+}
+
+/* this is the main section*/
+main{
+    padding: .5rem 1vw;
+}
+
+main h1{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+}
+
+main ol{
+    list-style-type: circle;
+    background-color: #e7ba90;
+    padding: .5rem 3vw;
+}
+
+main dl{
+    border-style:double;
+    border-color: #e7ba90;
+    padding: .5rem 1vw;
+}
+
+main dl dt{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 700;
+    color: #a6351c;
+}
+
+main dl dd{
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
+    color: #4b4a1e;
+}
+
+main ul li{
+    list-style-type: square;
+}
+
+main p a{
+    color: #4b4a1e;
+}
+
+main address a{
+    color: #4b4a1e;
+}
+
+.parkhero {
+    width: 100%;
+    margin: 0;
+}
+
+.parkhero img {
+    width: 100%;
+    height: auto;
+}
+
+/*image formatting stuff here*/
+figure.wrapped {
+    width: 30%;
+    margin: 0 0 0 .2%;
+    float: right;
+}
+
+figure.wrapped img{
+    width: 100%;
+    height: auto;
+}
+
+figure.wrapped figcaption{
+    text-align: center;
+    font-size: .75rem;
+}
+
+/* gallery */
+div.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.gallery figure{
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery img:hover{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+}
+
+div.gallery figcaption{
+    text-align: center;
+    font-size: .75rem;
+    color: #4b4a1e;
+}
+
+/*this is the form section*/
+.myform fieldset {
+    border: 1px solid #4b4a1e;
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.myform labelm{
+    margin: .5rem;
+}
+
+.myform label, .myform select, .myform [type=text] , .myform [type=tel], .myform [type=email], .myform text{
+    display: block;
+}
+
+.myform legend {
+    color: #4b4a1e;
+    font-size: .8rem;
+}
+
+.myform [type=text], .myform [type=tel], .myform [type=email], .myform select, .myform textarea {
+    border: solid 1px #4b4a1e;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 200;
+}
+
+.myform textarea {
+    height: 6rem;
+}
+
+.myform :required {
+    background-color: rgba(231, 186, 144, 0.5);
+}
+
+.myform [type=submit] {
+    background-color: #4b4a1e;
+    font-family: 'Barlow', sans-serif;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 01vw;
+}
+
+/* this is the table section*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th {
+    background-color: #4b4a1e;
+    padding: .5rem 2vw;
+    text-align: left;
+    font-weight: 700;
+    color: white;
+}
+
+table td {
+    padding: .4rem 2vw;
+    color: #4b4a1e;
+}
+
+table tr:nth-child(odd) {
+    background-color: rgba(231, 186, 144, 0.4);
+}
+
+table tr:hover {
+    background-color: rgba(217, 102, 61, 0.2);
+}
+
+
+/* this is the footer section*/
+footer{
+    background-color: #4b4a1e;
+    text-align: center;
+    color: white;
+    padding: 1rem 0;
+    font-size: .8rem;
+}
+
+footer a{
+    color: white;
+}
+
+header, nav, main, footer {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
